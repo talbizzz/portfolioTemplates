@@ -1,0 +1,17 @@
+.welcomebg{
+    /*container position*/
+    padding:0;
+    margin:0;
+
+    top:-10%;
+    left:-10%;
+
+    width: 100%;
+    height: 100%;
+
+    /*background image*/
+    background: url(../Pictures/principalBackground2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
