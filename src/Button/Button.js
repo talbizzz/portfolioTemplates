@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ({path, description}){
+export default function Button({path, description}){
     return(
         <a href="/firstTemplate#gallery"
            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ">

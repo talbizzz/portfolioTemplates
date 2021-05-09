@@ -5,8 +5,12 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Welcome from "./Welcome/Welcome";
 import Images from "./Images/Images"
 import AudiosVideos from "./AudiosVideos/AudiosVideos"
+import About from "./About/About";
+import Gallery from "./Gallery/Gallery";
+import Upcoming from "./Upcoming/Upcoming";
 
-import React, {useState} from "react";
+
+import React, {} from "react";
 
 function App() {
     return (
@@ -17,6 +21,9 @@ function App() {
                     <Route exact path={"/secondTemplate"} component={SecondTemplate}/>
                     <Route path={"/firstTemplate/Gallery/Pictures"} component={Images} />
                     <Route path={"/firstTemplate/Gallery/AudiosVideos"} component={AudiosVideos}/>
+                    <Route path={"/SecondTemplate/About"} component={About}/>
+                    <Route path={"/SecondTemplate/Gallery"} component={Gallery}/>
+                    <Route path={"/SecondTemplate/Schedule"} component={Upcoming}/>
                 </Switch>
             </Router>
     );

@@ -18,7 +18,7 @@ export default function FirstTemplate(){
         }else{
             setSize(1)
         }
-    }, )
+    },)
 
     const backgroundStyle= {
         background: size===0? `url(${background1}) no-repeat center top fixed`:  `url(${background2}) no-repeat center top`
