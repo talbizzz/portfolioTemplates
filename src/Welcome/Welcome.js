@@ -31,12 +31,12 @@ export default function Welcome() {
                     </div>
                     <div  style={{marginTop:"12%"}} >
                         <div data-aos={"fade-down-right"} data-aos-duration="3000">
-                            <Link params={{dark: dark}}  style={linksStyle} to={"/firstTemplate"}>
+                            <Link style={linksStyle} to={"/firstTemplate"}>
                                 <h1 className={"grow"}>First Model</h1>
                             </Link>
                         </div>
                         <div data-aos={"fade-up-left"} data-aos-duration="3000">
-                            <Link params={{dark: dark}} style={linksStyle} to={"/secondTemplate"}>
+                            <Link style={linksStyle} to={"/secondTemplate"}>
                                 <h1>Second Model</h1>
                             </Link>
                         </div>

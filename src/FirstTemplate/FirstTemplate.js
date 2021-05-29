@@ -10,6 +10,7 @@ import Footer from "../Footer/Footer";
 
 export default function FirstTemplate(){
     const [size, setSize]= useState(0);
+    const match = { path: "/FirstTemplate"}
 
     useEffect(() => {
         console.log("window:"+window.innerWidth)
@@ -55,14 +56,14 @@ export default function FirstTemplate(){
                 </div>
             </article>
             <div id={"about"}/>
-            <About/>
+            <About match={match}/>
             <div id={"gallery"}/>
-            <Gallery/>
+            <Gallery match={match}/>
             <div id={"upcoming"}>
-                <Upcoming/>
+                <Upcoming match={match}/>
             </div>
             <div id={"footer"}>
-                <Footer/>
+                <Footer />
             </div>
         </div>
 

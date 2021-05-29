@@ -2,12 +2,13 @@ import React, {useEffect, useState} from 'react';
 import Nav2 from "../Nav/Nav2";
 import background1 from "../Pictures/principalBackground2.png";
 import background2 from "../Pictures/principalBackground.jpeg";
+import {useParams} from 'react-router-dom';
 
-export default function  SecondTemplate(){
+export default function  SecondTemplate({match}){
     const [size, setSize]= useState(0);
-
     useEffect(() => {
         console.log("window:"+window.innerWidth)
+        console.log(match);
         if(window.innerWidth>600){
             setSize(0)
         }else{

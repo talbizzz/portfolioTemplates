@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import aboutimage from '../Pictures/principalBackground.jpeg';
+import Nav2 from "../Nav/Nav2";
 
-const About = () => {
+const About = ({match}) => {
+    const [first, setFirst]= useState(false);
+    useEffect(() => {
+        if(match.path==="/FirstTemplate"){
+            setFirst(true)
+        }else{
+            setFirst(false)
+        }
+        console.log(first)
+    }, [])
     return(
         <div className="about">
+            {first? <span/> : <Nav2 size={0}/>}
             <div class="vh-100 dt w-100 tc white cover baskerville" style={{zIndex:"-2", backgroundColor:"#465964"}} >
                 <div class="cf mt3 mr3" >
                     <div class=" fl w-100 w-60-ns black-70 pl4-ns pr5-ns ph4 pb6-ns f3 white">

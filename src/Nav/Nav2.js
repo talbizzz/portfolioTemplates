@@ -28,11 +28,11 @@ export default function Nav({size}){
                         <img src="http://tachyons.io/img/logo.jpg" className="dib w2 h2 br-100" alt="Site Name"/>
                     </a>
                     <div className=" dtc-l v-mid w-100 w-75-l tc tr-l pv3">
-                        <Link className="link dim white f4 dib mr3 mr4-l" to="#" title="Home">Home</Link>
-                        <Link className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/About" title="How it Works">About</Link>
-                        <Link className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/Gallery" title="Blog">Gallery</Link>
-                        <Link className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/Schedule" title="Press">Schedule</Link>
-                        <Link className="link dim white f4 dib tr" to="#" title="Contact">Contact</Link>
+                        <Link  className="link dim white f4 dib mr3 mr4-l" to="#" title="Home">Home</Link>
+                        <Link  className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/About" title="How it Works">About</Link>
+                        <Link  className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/Gallery" title="Blog">Gallery</Link>
+                        <Link  className="link dim white f4 dib mr3 mr4-l" to="/SecondTemplate/Schedule" title="Press">Schedule</Link>
+                        <Link  className="link dim white f4 dib tr" to="#" title="Contact">Contact</Link>
                     </div>
                 </nav>:
                 <div/>
