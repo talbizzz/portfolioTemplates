@@ -18,7 +18,6 @@ import Footer from "./Footer/Footer";
 function App() {
     if(isMobile){
         return (
-            <Router>
                 <Switch>
                     <Route exact path={"/"} render={(props) => (
                         <Welcome {...props} mobile={true}/>
@@ -54,13 +53,12 @@ function App() {
                         <Footer {...props} mobile={true} />
                     )}/>
                 </Switch>
-            </Router>
         )
     }else{
         return (
             <Router>
                 <Switch>
-                    <Route exact path={"/"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates"} render={(props) => (
                         <Welcome {...props} mobile={false} />
                     )}/>
                     <Route exact path={"/firstTemplate"} render={(props) => (
