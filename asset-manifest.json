@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolioTemplates/static/css/main.d35f5e2d.chunk.css",
-    "main.js": "/portfolioTemplates/static/js/main.265e6392.chunk.js",
-    "main.js.map": "/portfolioTemplates/static/js/main.265e6392.chunk.js.map",
+    "main.js": "/portfolioTemplates/static/js/main.746f91fb.chunk.js",
+    "main.js.map": "/portfolioTemplates/static/js/main.746f91fb.chunk.js.map",
     "runtime-main.js": "/portfolioTemplates/static/js/runtime-main.965b0c16.js",
     "runtime-main.js.map": "/portfolioTemplates/static/js/runtime-main.965b0c16.js.map",
     "static/css/2.80e333ec.chunk.css": "/portfolioTemplates/static/css/2.80e333ec.chunk.css",
-    "static/js/2.6a03b0a4.chunk.js": "/portfolioTemplates/static/js/2.6a03b0a4.chunk.js",
-    "static/js/2.6a03b0a4.chunk.js.map": "/portfolioTemplates/static/js/2.6a03b0a4.chunk.js.map",
+    "static/js/2.f5153953.chunk.js": "/portfolioTemplates/static/js/2.f5153953.chunk.js",
+    "static/js/2.f5153953.chunk.js.map": "/portfolioTemplates/static/js/2.f5153953.chunk.js.map",
     "static/js/3.77003d5a.chunk.js": "/portfolioTemplates/static/js/3.77003d5a.chunk.js",
     "static/js/3.77003d5a.chunk.js.map": "/portfolioTemplates/static/js/3.77003d5a.chunk.js.map",
     "index.html": "/portfolioTemplates/index.html",
     "static/css/2.80e333ec.chunk.css.map": "/portfolioTemplates/static/css/2.80e333ec.chunk.css.map",
     "static/css/main.d35f5e2d.chunk.css.map": "/portfolioTemplates/static/css/main.d35f5e2d.chunk.css.map",
-    "static/js/2.6a03b0a4.chunk.js.LICENSE.txt": "/portfolioTemplates/static/js/2.6a03b0a4.chunk.js.LICENSE.txt",
+    "static/js/2.f5153953.chunk.js.LICENSE.txt": "/portfolioTemplates/static/js/2.f5153953.chunk.js.LICENSE.txt",
     "static/media/Mondnacht (Schumann).ea8fa7f0.m4a": "/portfolioTemplates/static/media/Mondnacht (Schumann).ea8fa7f0.m4a",
     "static/media/Willkommen und Abschied.133ae380.m4a": "/portfolioTemplates/static/media/Willkommen und Abschied.133ae380.m4a",
     "static/media/image0.23f43f1d.jpeg": "/portfolioTemplates/static/media/image0.23f43f1d.jpeg",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.965b0c16.js",
     "static/css/2.80e333ec.chunk.css",
-    "static/js/2.6a03b0a4.chunk.js",
+    "static/js/2.f5153953.chunk.js",
     "static/css/main.d35f5e2d.chunk.css",
-    "static/js/main.265e6392.chunk.js"
+    "static/js/main.746f91fb.chunk.js"
   ]
 }
