@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './FirstTemplate.css'
 import About from "../About/About";
 import Gallery from "../Gallery/Gallery";
 import Upcoming from "../Upcoming/Upcoming";
 import Footer from "../Footer/Footer";
 import TitleText from "../TitleText/TitleText";
-import {Route} from "react-router-dom";
 
 export default function FirstTemplate({mobile}){
     const match = { path: "/FirstTemplate"}

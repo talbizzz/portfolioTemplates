@@ -10,20 +10,19 @@ export default function Upcoming({match, mobile}){
 
 
     const [first, setFirst]= useState(false);
-
-
     useEffect(() => {
         if(match.path==="/FirstTemplate"){
             setFirst(true)
         }else{
             setFirst(false)
         }
-        console.log(first)
     }, [])
+
     AOS.init();
+
     return(
         <div>
-            <div className={first? " bt b--dark-blue-05 mr6-ns": "b--dark-blue-05 mr6-ns"} style={first ? {marginTop:"35%"} : {marginTop:"10%"}}>
+            <div className={first? "mr6-ns": "mr6-ns"} style={first ? {marginTop:"35%"} : {marginTop:"10%"}}>
                 {first? <span/> : <Nav mobile={mobile} first={first}/>}
                 <div>
                     <h1
