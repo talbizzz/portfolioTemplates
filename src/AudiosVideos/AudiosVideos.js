@@ -1,25 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import audioMondnacht from '../Pictures/Mondnacht (Schumann).m4a';
 import audioWilkommen from '../Pictures/Willkommen und Abschied.m4a';
 import ReactPlayer from "react-player";
 import PrevButton from '../Button/Button'
 
-const AudiosVideos = () => {
+const AudiosVideos = ({match, mobile}) => {
+
+    const [first, setFirst] = useState(false);
+    useEffect(() => {
+        if (match.path === "/FirstTemplate") {
+            setFirst(true)
+        } else {
+            setFirst(false)
+        }
+        console.log(first)
+    }, [])
 
     return (
         <div>
             <div className="flex pa4">
-                <PrevButton path={"M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"}/>
+                <PrevButton href={first ? "/firstTemplate/Gallery" : "/secondTemplate/Gallery"}
+                            path={"M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"}/>
             </div>
             <div className="w-100 fl mt2 center">
                 <div className="w-third-ns w-100 fl pa3 ">
-                    <ReactPlayer url='https://www.youtube.com/watch?v=ASJDB1KiLUc' width={'auto'} height={'auto'} playing={false} />
+                    <ReactPlayer url='https://www.youtube.com/watch?v=ASJDB1KiLUc' width={'auto'} height={'auto'}
+                                 playing={false}/>
                 </div>
                 <div className="w-third-ns w-100 fl pa3">
-                    <ReactPlayer url='https://www.youtube.com/watch?v=GrlXQ8miP_I&authuser=0' width={'auto'} height={'auto'} playing={false} />
+                    <ReactPlayer url='https://www.youtube.com/watch?v=GrlXQ8miP_I&authuser=0' width={'auto'}
+                                 height={'auto'} playing={false}/>
                 </div>
                 <div className="w-third-ns w-100 fl pa3">
-                    <ReactPlayer url='https://www.youtube.com/watch?v=uvaNPx_SyaE&authuser=0' width={'auto'} height={'auto'} playing={false} />
+                    <ReactPlayer url='https://www.youtube.com/watch?v=uvaNPx_SyaE&authuser=0' width={'auto'}
+                                 height={'auto'} playing={false}/>
                 </div>
             </div>
             <div className={"w-100 fl"}>

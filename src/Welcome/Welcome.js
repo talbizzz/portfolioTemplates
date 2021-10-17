@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init();
-export default function Welcome() {
+export default function Welcome({mobile}) {
 
     const [dark, setDark]= useState(true);
 
@@ -29,7 +29,7 @@ export default function Welcome() {
                             setDark(prevState => !prevState)
                         }} />
                     </div>
-                    <div  style={{marginTop:"12%"}} >
+                    <div  style={{marginTop:mobile?"50%":"12%"}} >
                         <div data-aos={"fade-down-right"} data-aos-duration="3000">
                             <Link style={linksStyle} to={"/firstTemplate"}>
                                 <h1 className={"grow"}>First Model</h1>

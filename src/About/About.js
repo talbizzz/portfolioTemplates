@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import aboutimage from '../Pictures/principalBackground.jpeg';
-import Nav2 from "../Nav/Nav2";
+import Nav from "../Nav/Nav";
 
-const About = ({match}) => {
+const About = ({match, mobile}) => {
     const [first, setFirst]= useState(false);
     useEffect(() => {
         if(match.path==="/FirstTemplate"){
@@ -14,15 +14,15 @@ const About = ({match}) => {
     }, [])
     return(
         <div className="about">
-            {first? <span/> : <Nav2 size={0}/>}
+            {first? <span/> : <Nav mobile={mobile} first={first}/>}
             <div class="vh-100 dt w-100 tc white cover baskerville" style={{zIndex:"-2", backgroundColor:"#465964"}} >
-                <div class="cf mt3 mr3" >
+                <div class="cf mt3-ns mr3" >
                     <div class=" fl w-100 w-60-ns black-70 pl4-ns pr5-ns ph4 pb6-ns f3 white">
-                        <header class="mt6 bb b--white-70">
+                        <header class="mt6-ns mt4 bb b--white-70">
                             <h3 class="f1 lh-title mt0 mb3" style={{fontFamily:"Mak", zIndex:"-1"}}>About me</h3>
                         </header>
                         <section class="">
-                            <p class="tl lh-copy f4 mt2">
+                            <p class="tl lh-copy f4 mt4">
                                 Die Pianistin Rebeka Stojkoska, geboren
                                 1995, wuchs in Skopje (Nordmazedonien)
                                 auf. Einen Teil ihrer Kindheit lebte sie in Volos (Griechenland), wo sie im Alter von 4

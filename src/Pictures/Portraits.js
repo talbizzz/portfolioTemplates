@@ -9,10 +9,6 @@ import image7 from "./image7.jpeg";
 
 export const portraits = [
     {
-        url :image0,
-        caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
-    },
-    {
         url :image1,
         caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
     },
@@ -28,15 +24,19 @@ export const portraits = [
         url :image4,
         caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
     },{
-        url : image5,
-        caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
-    },
+    url : image5,
+    caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
+},
     {
         url : image6,
         caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
     },
     {
         url : image7,
+        caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
+    },
+    {
+        url :image0,
         caption:"L'Ancêtre (C. Saint-Saëns), Prinzregententheater München, 2019 © Jean-Marc Turmes"
     },
 ]
