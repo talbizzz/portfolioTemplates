@@ -19,37 +19,37 @@ function App() {
     if(isMobile){
         return (
                 <Switch>
-                    <Route exact path={"/"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates"} render={(props) => (
                         <Welcome {...props} mobile={true}/>
                     )}/>
-                    <Route exact path={"/firstTemplate"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/firstTemplate"} render={(props) => (
                         <FirstTemplate {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/secondTemplate"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/secondTemplate"} render={(props) => (
                         <SecondTemplate {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/firstTemplate/Gallery/Pictures"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/firstTemplate/Gallery/Pictures"} render={(props) => (
                         <Images {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/secondTemplate/Gallery/Pictures"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/secondTemplate/Gallery/Pictures"} render={(props) => (
                         <Images {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/firstTemplate/Gallery/AudiosVideos"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/firstTemplate/Gallery/AudiosVideos"} render={(props) => (
                         <AudiosVideos {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/secondTemplate/Gallery/AudiosVideos"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/secondTemplate/Gallery/AudiosVideos"} render={(props) => (
                         <AudiosVideos {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/SecondTemplate/About"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/SecondTemplate/About"} render={(props) => (
                         <About {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/SecondTemplate/Gallery"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/SecondTemplate/Gallery"} render={(props) => (
                         <Gallery {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/SecondTemplate/Schedule"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/SecondTemplate/Schedule"} render={(props) => (
                         <Upcoming {...props} mobile={true} />
                     )}/>
-                    <Route exact path={"/secondTemplate/contact"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/secondTemplate/contact"} render={(props) => (
                         <Footer {...props} mobile={true} />
                     )}/>
                 </Switch>
