@@ -20,7 +20,7 @@ export default function FirstTemplate({mobile}){
                 <Upcoming match={match} mobile={mobile}/>
             </div>
             <div id={"schedule"}>
-                <Footer match={match} mobile={mobile}/>
+                <Footer match={match} mobile={mobile} first={true}/>
             </div>
 
         </div>

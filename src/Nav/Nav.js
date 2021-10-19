@@ -24,22 +24,27 @@ export default function Nav({first, mobile}) {
                 !mobile ?
                     <nav className=" dt-l w-100 border-box pv3-ns ph5-l sticky"
                          style={{backgroundColor: `${bgColor}`}}>
-                        <a className=" dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="/portfolioTemplates"
+                        <a className=" dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"
+                           href="/portfolioTemplates"
                            title="Home">
                             <img src="http://tachyons.io/img/logo.jpg" className="dib w2 h2 br-100" alt="Site Name"/>
                         </a>
                         <div className=" dtc-l v-mid w-100 w-75-l tc tr-l pv3">
-                            <a className="link dim white f4 dib mr3 mr4-l" href={`${first ? "#" : "/portfolioTemplates/SecondTemplate"}`}
+                            <a className="link dim white f4 dib mr3 mr4-l"
+                               href={`${first ? "#" : "/portfolioTemplates/SecondTemplate"}`}
                                title="Home">Home</a>
                             <a className="link dim white f4  dib mr3 mr4-l"
-                               href={`${first ? "#about" : "/portfolioTemplates/SecondTemplate/About"}`} title="How it Works">About</a>
+                               href={`${first ? "#about" : "/portfolioTemplates/SecondTemplate/About"}`}
+                               title="How it Works">About</a>
                             <a className="link dim white f4  dib mr3 mr4-l"
-                               href={`${first ? "#gallery" : "/portfolioTemplates/SecondTemplate/Gallery"}`} title="Blog">Gallery</a>
+                               href={`${first ? "#gallery" : "/portfolioTemplates/SecondTemplate/Gallery"}`}
+                               title="Blog">Gallery</a>
                             <a className="link dim white f4  dib mr3 mr4-l"
-                               href={`${first ? "#upcoming" : "/portfolioTemplates/SecondTemplate/schedule"}`} title="Press">Schedule</a>
+                               href={`${first ? "#upcoming" : "/portfolioTemplates/SecondTemplate/schedule"}`}
+                               title="Press">Schedule</a>
                             {first ?
                                 <a className="link dim white f4  dib tr"
-                                    href={`${"#schedule"}`} title="Contact">Contact</a>:
+                                   href={"#schedule"} title="Contact">Contact</a> :
                                 <></>
                             }
                         </div>
@@ -47,17 +52,21 @@ export default function Nav({first, mobile}) {
                     <nav className=" dt-l w-100 border-box pv3-ns ph5-l ph0 sticky"
                          style={{backgroundColor: `${bgColor}`}}>
                         <div className=" dtc-l v-mid w-100 w-75-l tc tr-l pv3">
-                            <a className="link dim white f4-ns dib mr3 mr4-l" href={`${first ? "#" : "/portfolioTemplates/SecondTemplate"}`}
+                            <a className="link dim white f4-ns dib mr3 mr4-l"
+                               href={`${first ? "#" : "/portfolioTemplates/SecondTemplate"}`}
                                title="Home">Home</a>
                             <a className="link dim white f4-ns  dib mr3 mr4-l"
-                               href={`${first ? "#about" : "/portfolioTemplates/SecondTemplate/About"}`} title="How it Works">About</a>
+                               href={`${first ? "#about" : "/portfolioTemplates/SecondTemplate/About"}`}
+                               title="How it Works">About</a>
                             <a className="link dim white f4-ns  dib mr3 mr4-l"
-                               href={`${first ? "#gallery" : "/portfolioTemplates/SecondTemplate/Gallery"}`} title="Blog">Gallery</a>
+                               href={`${first ? "#gallery" : "/portfolioTemplates/SecondTemplate/Gallery"}`}
+                               title="Blog">Gallery</a>
                             <a className="link dim white f4-ns  dib mr3 mr4-l"
-                               href={`${first ? "#upcoming" : "/portfolioTemplates/SecondTemplate/schedule"}`} title="Press">Schedule</a>
+                               href={`${first ? "#upcoming" : "/portfolioTemplates/SecondTemplate/schedule"}`}
+                               title="Press">Schedule</a>
                             {first ?
-                                <a className="link dim white f4  dib tr"
-                                   href={`${"#schedule"}`} title="Contact">Contact</a>:
+                                <a className="link dim white f4-ns  dib tr"
+                                   href={"#schedule"} title="Contact">Contact</a> :
                                 <></>
                             }
                         </div>

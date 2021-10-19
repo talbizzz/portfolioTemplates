@@ -6,33 +6,34 @@ import Nav from "../Nav/Nav";
 import data from "./data";
 import Footer from "../Footer/Footer";
 
-export default function Upcoming({match, mobile}){
+export default function Upcoming({match, mobile}) {
 
 
-    const [first, setFirst]= useState(false);
+    const [first, setFirst] = useState(false);
     useEffect(() => {
-        if(match.path==="/FirstTemplate"){
+        if (match.path === "/FirstTemplate") {
             setFirst(true)
-        }else{
+        } else {
             setFirst(false)
         }
     }, [])
 
     AOS.init();
 
-    return(
+    return (
         <div>
-            <div className={first? "mr6-ns": "mr6-ns"} style={first ? {marginTop:"35%"} : {marginTop:"10%"}}>
-                {first? <span/> : <Nav mobile={mobile} first={first}/>}
+            <div className={first ? "mr6-ns" : "mr6-ns"}
+                 style={first ? {marginTop: "35%", marginBottom: "15%"} : {marginTop: "10%"}}>
+                {first ? <span/> : <Nav mobile={mobile} first={first}/>}
                 <div>
                     <h1
-                        style={{ fontFamily: "Mak", color:"#465964"}}
+                        style={{fontFamily: "Mak", color: "#465964"}}
                         className="f1 f-headline-ns tl tl-ns ml5-ns"
                     >
                         Termine
                     </h1>
                     <div
-                        data-aos={mobile?"fade-in":""}
+                        data-aos={mobile ? "fade-in" : ""}
                         data-aos-duration="2000"
                     >
                         {
@@ -52,8 +53,8 @@ export default function Upcoming({match, mobile}){
                 </div>
             </div>
             {
-                !first?
-                    <Footer mobile={mobile} match={match}/>:
+                !first ?
+                    <Footer mobile={mobile} match={match}/> :
                     <div/>
             }
         </div>

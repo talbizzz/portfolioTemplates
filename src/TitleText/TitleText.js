@@ -18,7 +18,7 @@ export default ({first, mobile}) => {
                 <div className="vh-100 w-100 tc bg-dark-gray white cover"
                      style={backgroundStyle}>
                     <Nav first={first} mobile={mobile}/>
-                    <div className={"tc tl-ns ml5-ns ba-m b--white w-20-ns"}>
+                    <div className={"tc tl-ns ml5-ns w-20-ns"}>
                         <h3 className={"pt7"}>
                             <span data-aos={"fade-down"} data-aos-duration="500">R</span>
                             <span data-aos={"fade-up"} data-aos-duration="700">E</span>
