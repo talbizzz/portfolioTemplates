@@ -61,18 +61,18 @@ function App() {
                     <Route exact path={"/portfolioTemplates"} render={(props) => (
                         <Welcome {...props} mobile={false} />
                     )}/>
-                    <Route exact path={"/firstTemplate"} render={(props) => (
+                    <Route exact path={"/portfolioTemplates/firstTemplate"} render={(props) => (
                         <FirstTemplate {...props} mobile={false} />
                     )}/>
-                    <Route exact path={"/secondTemplate"} component={SecondTemplate}/>
-                    <Route path={"/firstTemplate/Gallery/Pictures"} component={Images} />
-                    <Route path={"/secondTemplate/Gallery/Pictures"} component={Images} />
-                    <Route path={"/firstTemplate/Gallery/AudiosVideos"} component={AudiosVideos}/>
-                    <Route path={"/secondTemplate/Gallery/AudiosVideos"} component={AudiosVideos}/>
-                    <Route path={"/SecondTemplate/About"} component={About}/>
-                    <Route path={"/SecondTemplate/Gallery"} component={Gallery}/>
-                    <Route path={"/SecondTemplate/Schedule"} component={Upcoming}/>
-                    <Route path={"/SecondTemplate/contact"} component={Footer}/>
+                    <Route exact path={"/portfolioTemplates/secondTemplate"} component={SecondTemplate}/>
+                    <Route path={"/portfolioTemplates/firstTemplate/Gallery/Pictures"} component={Images} />
+                    <Route path={"/portfolioTemplates/secondTemplate/Gallery/Pictures"} component={Images} />
+                    <Route path={"/portfolioTemplates/firstTemplate/Gallery/AudiosVideos"} component={AudiosVideos}/>
+                    <Route path={"/portfolioTemplates/secondTemplate/Gallery/AudiosVideos"} component={AudiosVideos}/>
+                    <Route path={"/portfolioTemplates/SecondTemplate/About"} component={About}/>
+                    <Route path={"/portfolioTemplates/SecondTemplate/Gallery"} component={Gallery}/>
+                    <Route path={"/portfolioTemplates/SecondTemplate/Schedule"} component={Upcoming}/>
+                    <Route path={"/portfolioTemplates/SecondTemplate/contact"} component={Footer}/>
                 </Switch>
             </Router>
         );

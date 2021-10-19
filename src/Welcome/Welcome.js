@@ -31,12 +31,12 @@ export default function Welcome({mobile}) {
                     </div>
                     <div  style={{marginTop:mobile?"50%":"12%"}} >
                         <div data-aos={"fade-down-right"} data-aos-duration="3000">
-                            <Link style={linksStyle} to={"/firstTemplate"}>
+                            <Link style={linksStyle} to={"/portfolioTemplates/firstTemplate"}>
                                 <h1 className={"grow"}>First Model</h1>
                             </Link>
                         </div>
                         <div data-aos={"fade-up-left"} data-aos-duration="3000">
-                            <Link style={linksStyle} to={"/secondTemplate"}>
+                            <Link style={linksStyle} to={"/portfolioTemplates/secondTemplate"}>
                                 <h1>Second Model</h1>
                             </Link>
                         </div>
