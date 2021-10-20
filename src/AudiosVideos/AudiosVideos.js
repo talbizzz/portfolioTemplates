@@ -19,8 +19,13 @@ const AudiosVideos = ({match, mobile}) => {
     return (
         <div>
             <div className="flex pa4">
-                <PrevButton href={first ? "/firstTemplate/Gallery" : "/secondTemplate/Gallery"}
-                            path={"M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"}/>
+                <PrevButton
+                    href={
+                        first ?
+                            "/portfolioTemplates/firstTemplate/Gallery" :
+                            "/portfolioTemplates/SecondTemplate/Gallery"
+                    }
+                    path={"M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"}/>
             </div>
             <div className="w-100 fl mt2 center">
                 <div className="w-third-ns w-100 fl pa3 ">

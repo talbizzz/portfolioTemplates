@@ -12,10 +12,12 @@ export default function FirstTemplate({mobile}){
     return(
         <div>
             <TitleText first={true} mobile={mobile}/>
-            <div id={"about"}/>
+            <div id={"about"}>
                 <About match={match} mobile={mobile}/>
-            <div id={"gallery"}/>
+            </div>
+            <div id={"gallery"}>
                 <Gallery match={match} mobile={mobile}/>
+            </div>
             <div id={"upcoming"}>
                 <Upcoming match={match} mobile={mobile}/>
             </div>

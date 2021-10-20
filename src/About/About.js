@@ -17,11 +17,11 @@ const About = ({match, mobile}) => {
             {first? <span/> : <Nav mobile={mobile} first={first}/>}
             <div class="vh-100 dt w-100 tc white cover baskerville" style={{zIndex:"-2", backgroundColor:"#465964"}} >
                 <div class="cf mt3-ns mr3" >
-                    <div class=" fl w-100 w-60-ns black-70 pl4-ns pr5-ns ph4 pb6-ns f3 white">
+                    <div class=" fl w-100 mh2 mh0-ns w-60-ns  pl4-ns pr5-ns white">
                         <header class="mt6-ns mt4 bb b--white-70">
-                            <h3 class="f1 lh-title mt0 mb3" style={{fontFamily:"Mak", zIndex:"-1"}}>About me</h3>
+                            <h3 class="f1 lh-title mt0 mb4" style={{fontFamily:"Mak", zIndex:"-1"}}>About me</h3>
                         </header>
-                        <section class="">
+                        <section>
                             <p class="tl lh-copy f4 mt4">
                                 Die Pianistin Rebeka Stojkoska, geboren
                                 1995, wuchs in Skopje (Nordmazedonien)
@@ -55,12 +55,11 @@ const About = ({match, mobile}) => {
                                 Hochschule für Musik und Theater in München inne.
                             </p>
                         </section>
-                    </div>
-                    <article class="fl w-100 w-40-ns pl3 center mt7-ns ">
-                        <div class="center aspect-ratio aspect-ratio--5x7">
+                        <div class="center aspect-ratio aspect-ratio--5x7" >
                             <img src={aboutimage} alt="portrait"/>
                         </div>
-                    </article>
+                    </div>
+
                 </div>
             </div>
         </div>

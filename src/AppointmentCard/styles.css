@@ -1,0 +1,11 @@
+.frame {
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 200ms;
+}
+
+.frame:hover {
+    transform: scale(1.2);
+}
