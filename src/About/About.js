@@ -55,11 +55,12 @@ const About = ({match, mobile}) => {
                                 Hochschule für Musik und Theater in München inne.
                             </p>
                         </section>
+                    </div>
+                    <article class="fl w-100 w-40-ns center mt7-ns">
                         <div class="center aspect-ratio aspect-ratio--5x7" >
                             <img src={aboutimage} alt="portrait"/>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </div>
